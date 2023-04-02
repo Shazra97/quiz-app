@@ -1,0 +1,15 @@
+body{
+    background-image: url(https://thumbs.dreamstime.com/z/vector-seamless-pattern-question-marks-quiz-background-turquoise-161783989.jpg);
+    background-repeat: no-repeat;
+    
+}
+input{
+    outline: none;
+    border: none;
+    background-color: transparent !important;
+    
+
+}
+@media only screen and (max-width:600px) {
+
+}

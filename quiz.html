@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    
+    <title>Quiz</title>
+</head>
+<style>
+    .active{
+        border-left: 6px solid rgb(100, 100, 254);
+    
+    }
+    
+    li{
+        list-style: none;
+        cursor: pointer;
+        
+    }
+</style>
+
+
+<body onload="showQuiz(0)">
+    <div class="container ">
+        <div class="row  h3 border-3 text-danger mt-5 mx-3">Quiz Title</div>
+        <div class="container">
+            <div id="ques" class="row display-5 border-bottom border-primary p-3">Question</div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <ul>
+                    <li class="choice display-6 text-primary mt-5 " onclick="activeOption(this)">one</li>
+                    <li class="choice display-6 text-primary mt-5 " onclick="activeOption(this)">two</li>
+                    <li class="choice display-6 text-primary mt-5 " onclick="activeOption(this)">three</li>
+                    <li class="choice display-6 text-primary mt-5 " onclick="activeOption(this)">four</li>
+                </ul>
+
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-2"><button class="btn display-2 bg-danger text-light " onclick="savebtn()">Submit</button></div>
+                <div class="col-6"><button class="btn display-2 bg-danger text-light ">Want to End Quiz?</button></div>
+                <div class="col-4"></div>
+                
+            </div>
+        </div>
+    </div>
+
+
+    
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+
+
+</html>
